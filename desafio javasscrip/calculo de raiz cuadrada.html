@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	 .calculos{
+	 	background: green;
+	 	color: #f0e8e6;
+	 	margin: 5px;
+	 	padding: 10px;
+	 	font-size: 30px;
+	 	text-align: center;
+	 }
+	 body{
+	 	background-color: black;
+	 	justify-content: space-around;
+	 }
+	 p{
+	 	font-size:28px;
+	 	color:white;
+	 }
+	 h1{
+	 	color: red;
+	 	text-align: center;
+	 	font-size: 35px;
+	 }
+	 header{
+	 	text-align: center;
+	 }
+
+	</style>
+</head>
+<body>
+	<header>
+		<h1>DETERMINAR LAS RAICES DE UNA ECUACIÓN CUADRÁTICA</h1>
+	
+	<p>Para poder realizar las operaciones correspondientes se aplico la fórmula general de la ecuación cuadrática.</p>
+
+	<img class="imagen" src="http://1.bp.blogspot.com/-9wjvTzU2ZdU/VUFjTHagKHI/AAAAAAAAAS0/htlDmkmZNj8/s1600/FormulaGeneral.png" style="width: 50%"></header>
+	<article>
+			<p class="calculos" id="demo">		
+			</p>
+
+			<script type="text/javascript">
+				var a=prompt('introducir a')
+				var b=prompt('introducir b')
+				var c=prompt('introducir c')
+				var d=Math.pow(b,2)- 4*a*c
+				var r1= (-b + Math.sqrt(Math.pow(b,2)- 4*a*c))/2*a
+				var r2= (-b - Math.sqrt(Math.pow(b,2)- 4*a*c))/2*a
+				var r= -b/(2*a)
+
+				if (d>0)
+					{document.getElementById("demo").innerHTML ="la ecuación tiene dos raices: <br> " + "r1 = " + r1 + "<br> r2 = " + r2 + "<br> la ecuación que inserto es: " + a + "x^2 + " + b + "x + " + c;}
+					
+				else if (d==0)
+					{document.getElementById("demo").innerHTML = "la ecuación tiene una raiz:<br>" + "r = " + r + "<br>  la ecuación que inserto es: " + a + "x^2 + " + b + "x + " + c;}
+				else
+					{document.getElementById("demo").innerHTML ="la ecuación no tiene raices reales " ;}
+			
+		
+			</script>
+</article>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	 .calculos{
+	 	background: #006600;
+	 	color: #f0e8e6;
+	 	margin: 5px;
+	 	padding: 10px;
+	 	font-size: 30px;
+
+	 }
+	 .titulo{
+	 	background-color: yellow;
+	 	text-align: center;
+	 	color: blue;
+	 	font-size: 35px;
+	 }
+	 body{
+	 	background-color: black;
+	 }
+	 header{}
+	</style>
+</head>
+<body>
+	<header>
+		<h1 class="titulo">Determinar que día y mes es hoy en diferentes idiomas </h1>
+	</header>
+	<article>
+			<div class="calculos" id="salida">		
+			</div>
+			<script type="text/javascript">
+				var dia;
+				var day;
+				var Punchay;
+				var mes;
+				var jours;
+				var month;
+				var killa;
+				var mois;
+				switch (new Date().getDay()) {
+					case 0:
+						dia="domingo";
+						day="sunday";
+						Punchay="Intichay";
+						jours="dimanche";
+
+						break;
+					case 1:
+						dia="lunes";
+						day="monday";
+						Punchay="Killachay";
+						jours="lundi";
+						break;
+					case 2:
+						dia="martes";
+						day="Tuesday";
+						Punchay="Antichay";
+						jours="mardi";
+						break;
+					case 3:
+						dia="miercoles";
+						day="Wednesday";
+						Punchay="Qoyllurchay";
+						jours="mercredi";
+						break;
+					case 4:
+						dia="jueves";
+						day="Thursday";
+						Punchay="Illapachay";
+						jours="jeudi";
+						break;
+					case 5:
+						dia="viernes";
+						day="Friday";
+						Punchay="Ch’askachay";
+						jours="vendredi";
+						break;
+					case 6:
+						dia="sabado";
+						day="saturday";
+						Punchay="K’uychichay";
+						jours="samedi";
+						break;
+					}
+
+				switch (new Date().getMonth()){
+					case 0:
+						mes="Enero";
+						month="January";
+						killa="Kamay Raymi killa";
+						mois="Janvier";
+						break;
+					case 1:
+						mes="Febrero";
+						month="February";
+						killa="Hatun Poqoy killa";
+						mois="Février";
+						break;
+					case 2:
+						mes="Marzo";
+						month="March";
+						killa="Pawqar Waray killa";
+						mois="Mars";
+						break;
+					case 3:
+						mes="Abril";
+						month="April";
+						killa="Ayriway killa";
+						mois="Avril";
+						break;
+					case 4:
+						mes="Mayo";
+						month="May";
+						killa="Aymuray killa";
+						mois="Mai";
+						break;
+					case 5:
+						mes="Junio";
+						month="June";
+						killa="Inti Raymi killa";
+						mois="Juin";
+						break;
+					case 6:
+						mes="Julio";
+						month="July";
+						killa="Anta Situwa killa";
+						mois="Juillet";
+						break;
+					case 7:
+						mes="Agosto";
+						month="August";
+						killa="	Qhapaq Situwa killa";
+						mois="Août";
+						break;
+					case 8:
+						mes="Septiembre";
+						month="September";
+						killa="Unu Raymi killa";
+						mois="Septembre";
+						break;
+					case 9:
+						mes="Octubre";
+						month="October";
+						killa="Qoya Raymi killa";
+						mois="Octobre";
+						break;
+					case 10:
+						mes="Noviembre";
+						month="November";
+						killa="Ayamarq’a killa";
+						mois="Novembre";
+						break;
+					case 11:
+						mes="Diciembre";
+						month="December";
+						killa="Qhapaq Raymi killa";
+						mois="Décembre";
+						break;
+				}
+			document.getElementById("salida").innerHTML = "hoy es " + dia + " del mes de " + mes + "<br> en ingles es: " + day + " the month of " + month + "<br> en quechua es: " + Punchay + " killa " + killa + "<br> en frances es: " + jours + " de l'mois de " + mois;
+
+			</script>
+</article>
+</body>
+</html>
